@@ -11,10 +11,11 @@
             padding: 0; 
             height: 100%; 
             overflow: hidden; 
-            background-color: #ffffff; /* Fondo blanco para coincidir con tu app */
+            /* Color gris de fondo de tu app para que el 'techo' sea igual */
+            background-color: #f6f8fb; 
         }
 
-        /* Contenedor principal para asegurar que nada se mueva */
+        /* Contenedor principal */
         .wrapper { 
             position: relative;
             width: 100%; 
@@ -25,13 +26,15 @@
         /* Estilo del iframe con el truco del margen negativo */
         iframe {
             position: absolute;
-            /* -46px es la altura estándar del banner de Google Apps Script */
+            /* Subimos el iframe para esconder el banner de Google */
             top: -46px; 
             left: 0;
             width: 100%;
-            /* Compensamos la altura para que no quede un hueco blanco al final */
-            height: calc(100% + 60px);
+            /* Compensamos la altura total */
+            height: calc(100% + 46px);
             border: none;
+            /* Hacemos el fondo transparente por si acaso */
+            background-color: transparent;
         }
     </style>
 </head>
