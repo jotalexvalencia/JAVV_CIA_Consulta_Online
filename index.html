@@ -10,25 +10,21 @@
             padding: 0; 
             height: 100%; 
             overflow: hidden; 
-            background-color: #f6f8fb; /* Gris de fondo de la app */
+            background-color: #f6f8fb; /* Color gris de fondo */
         }
-
         .wrapper { 
             position: relative;
             width: 100%; 
             height: 100%; 
-            overflow: hidden; 
         }
-
         iframe {
             position: absolute;
-            /* Ajuste a -48px para asegurar limpieza total del banner */
-            top: -48px; 
+            /* Recorte de la barra de Google */
+            top: -46px; 
             left: 0;
             width: 100%;
-            height: calc(100% + 48px);
+            height: calc(100% + 46px);
             border: none;
-            background-color: transparent;
         }
     </style>
 </head>
