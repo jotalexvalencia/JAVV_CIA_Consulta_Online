@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CIA - Panel de Consulta</title>
+    <style>
+        /* Eliminamos márgenes y evitamos el scroll doble */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #f6f8fb; /* Color de fondo que coincide con tu consulta.html */
+        }
+        iframe {
+            position: absolute;
+            /* El ajuste de -46px es el truco para ocultar la barra de Google */
+            top: -46px; 
+            left: 0;
+            width: 100%;
+            /* Compensamos la altura para que no quede un hueco blanco abajo */
+            height: calc(100% + 46px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbwjuvmx4lHBhn-nuZonFD9YZrWNyylVuSwCCBlfnFAxYIar5S3l8RkmynCaMp0vRlupuw/exec?page=consulta" 
+        allow="camera; geolocation; microphone; autoplay">
+    </iframe>
+</body>
+</html>
