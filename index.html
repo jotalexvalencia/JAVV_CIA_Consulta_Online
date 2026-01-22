@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CIA - Panel de Consulta</title>
     <style>
-        /* Eliminamos cualquier margen del navegador */
         body, html { 
             margin: 0; 
             padding: 0; 
             height: 100%; 
             overflow: hidden; 
-            /* Color gris de fondo de tu app para que el 'techo' sea igual */
-            background-color: #f6f8fb; 
+            background-color: #f6f8fb; /* Gris de fondo de la app */
         }
 
-        /* Contenedor principal */
         .wrapper { 
             position: relative;
             width: 100%; 
@@ -23,17 +20,14 @@
             overflow: hidden; 
         }
 
-        /* Estilo del iframe con el truco del margen negativo */
         iframe {
             position: absolute;
-            /* Subimos el iframe para esconder el banner de Google */
-            top: -46px; 
+            /* Ajuste a -48px para asegurar limpieza total del banner */
+            top: -48px; 
             left: 0;
             width: 100%;
-            /* Compensamos la altura total */
-            height: calc(100% + 46px);
+            height: calc(100% + 48px);
             border: none;
-            /* Hacemos el fondo transparente por si acaso */
             background-color: transparent;
         }
     </style>
